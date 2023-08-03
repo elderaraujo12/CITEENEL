@@ -621,6 +621,18 @@ form button:hover{
                 <h2 class="form-h2">Formulário</h2>
                 <form action="" method="post" id="quero-participar">
                     {% csrf_token %}
+
+                    {% if form.errors %}
+                                    <div class="alert alert-danger" role="alert">
+                                      <ul>
+                                        {% for field in form %}
+                                          {% for error in field.errors %}
+                                            <li>{{ error}}</li>
+                                          {%endfor %}
+                                        {% endfor %}
+                                      </ul>
+                        </div>
+                    {% endif%}
                     
                     <label for="{{ form.nome.id_for_label }}">Nome</label>
                     <input type="text" name="{{ form.nome.name }}" placeholder="Digite seu nome" id="{{ form.nome.id_for_label }}" autocomplete="off" required>
