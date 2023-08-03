@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="main">
+    <h1 class="text">Obrigado</h1>
+    <p class="paragrafo">Se prepara para o maior evento de todos os tempos!</p>
+    <a class="btn" href="{% url 'core:home' %}">Home</a>
+</body>
+</html>
