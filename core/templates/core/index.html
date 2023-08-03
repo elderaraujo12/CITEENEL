@@ -613,13 +613,13 @@ form button:hover{
                      é o principal momento para discussão dos resultados e impactos do Programa de Pesquisa e Desenvolvimento (P&D) 
                     regulado pela Agência e implementado pelas empresas geradoras, transmissoras e distribuidoras de energia.
                 </p>
-                <a href="./Form--main/formu.html" target=""><button>Garanta Sua Vaga</button></a>
+                <a href="#quero-participar" target=""><button>Garanta Sua Vaga</button></a>
 
             </div>
 
             <div class="form">
                 <h2 class="form-h2">Formulário</h2>
-                <form action="" method="post">
+                <form action="" method="post" id="quero-participar">
                     {% csrf_token %}
                     
                     <label for="{{ form.nome.id_for_label }}">Nome</label>
@@ -698,7 +698,7 @@ form button:hover{
                     Não perca essa grande oportunidade de participar do Sendi 2023, estamos aguardando você.  
                 </p>
 
-                    <button>GARANTA SUA VAGA</button>
+                <a href="#quero-participar" style="text-decoration: none;" target=""><button>GARANTA SUA VAGA</button></a>
             </div>
 
 
