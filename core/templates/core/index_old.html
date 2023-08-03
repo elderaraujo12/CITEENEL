@@ -1,0 +1,790 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>citeenel</title>
+    <style>
+        :root{
+            --color-white: #b6f016;
+            --color-dark1: rgb(0, 0, 0);
+            --color-dark2: #e2dede;
+            --color-dark3: #414141;
+            --color-dark4: #1c1c1c;
+            --color-dark5: #343434;
+            --color-purple: #5bf303;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--color-dark1);
+            color: var(--color-white);
+        }
+        .img_logo_header{
+            width: 45px;
+        }
+        .header,
+        .navigation_header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .header{
+            background-color: var(--color-dark2);
+            justify-content: space-between;
+            padding: 0 10%;
+            height: 3.5em;
+            box-shadow: 1px 1px 4px var(--color-dark4);
+        }
+        .navigation_header{
+            gap: 3em;
+            z-index: 2;
+        }
+        .content{
+            padding-top: 5em;
+            text-align: center;
+            height: 15vh;
+            transition: 1s;
+        }
+        .navigation_header a{
+            text-decoration: none;
+            color: var(--color-purple);
+            transition: 1s;
+            font-weight: bold;
+        }
+        .navigation_header a:hover{
+            color: var(--color-dark2ite);
+        }
+        .active{
+            background: var(--color-dark3);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn_icon_header{
+            background: transparent;
+            border: none;
+            color: var(--color-white);
+            cursor: pointer;
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            .navigation_header{
+                position: absolute;
+                flex-direction: column !important;
+                top: 0;
+                background: var(--color-dark5);
+                height: 100%;
+                width: 35vw;
+                padding: 1em;
+                animation-duration: 1s;
+                margin-left: -100vw;
+            }
+            .btn_icon_header{
+                display: block;
+            }
+        }
+        @keyframes showSidebar {
+            from {margin-left: -100vw;}
+            to {margin-left: -10vw;}
+        }
+
+
+        .container{
+    max-width: 1900px;
+    margin: 0 auto;
+    padding:  4%;
+    align-items: center;
+    justify-content: center;
+    background-image: url({% static 'img/city-ceu.jpeg' %});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+nav{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    margin-top: -60px;
+    width: 90px;
+}
+
+nav ul{
+    margin-top: -60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+nav ul li{
+    padding: 20px;
+    color: azure;
+    cursor: pointer;
+}
+
+nav ul li:not(.leg)::after{
+    display: block;
+    content: "";
+    width: 0%;
+    background-color: #ddd3db;
+    transition: 0.5s;
+    height: 3px;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+nav ul li .lg{
+    border: 1px solid #393338;
+    border-radius: 30px;
+    padding: 5px 40px;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    color: #fffbff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    text-align: center;
+    
+}
+
+main .main__text{
+    width: 100%;
+    
+}
+
+main .main__text h1{
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+main .main__text h1 strong{
+    display: flex;
+    font-weight: normal;
+    color: aliceblue;
+}
+
+main .main__text h1 b{
+    
+    color: white;
+    padding: 5px;
+    font-size: 3rem;  
+}
+
+main .main__text p{
+    font-size: 1rem;
+    color: #dcd9dd;
+    margin: 20px 0 40px ;
+    width: 50%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+main .main__text button{
+    background-color: rgba(29, 219, 76, 0.884);
+    color: rgb(253, 253, 253);
+    border-radius: 30px;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid transparent;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+main .main__text button:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgb(15, 161, 51),
+    0 0 25px rgba(47, 255, 57, 0.582), 0 0 50px rgba(47, 255, 57, 0.582),
+    0 0 100px rgba(47, 255, 57, 0.582), 0 0 200px rgba(47, 255, 57, 0.582);
+}
+
+
+
+@media (max-width: 850px){
+    nav .menu-icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 60%;
+        transform: translateX(-100%);
+        transition: 0.6s;
+    }
+
+    nav ul.activo{
+        transform: translateX(0%);
+    }
+
+    nav ul li.lg{
+        border: 1px solid white;
+        margin-left: 0;
+        
+    }
+
+    nav ul li:not(.lg){
+        background-color: rgb(0, 0, 0);
+        
+    }
+
+    nav ul li a {
+        color : white;
+        font-size: 24px;
+    }
+
+    main{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main .main__text{
+        width: 100%;
+        text-align: center;
+    }
+
+    main ,.main__img{
+        margin-top: 70px;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:393px) {
+    main .main__text h1 b{
+        font-size: 3.5rem;
+    }
+
+    main .main__text h1 strong{
+        font-size: 2rem;
+    }
+}
+
+/*MEIO*/
+
+.meio{
+    background-color: white;
+}
+
+.meio h1{
+    color: #000000;
+    padding: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio p{
+    color: #000000;
+    width: 80%;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 10%;
+    padding: 0 4%;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.meio img{
+    width: 80%;
+    margin-top: auto;
+    margin:  15px 10% ;
+    padding: 10px;
+}
+
+@media (max-width:850px) {
+    .meio h1 p{
+        font-size: 3.5rem;
+        
+    }
+
+}
+
+@media (max-width:393px){
+    .meio img{
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        width: 100%;
+    }
+}
+
+/*icon*/
+
+.mid-icon{
+    background-color: #1D394F;
+    align-items: center;
+    text-align: center;
+    padding: 0x;
+    width: 100%;
+    margin: 10px 0 10px;
+    border: none;
+    
+}
+
+.icon{
+    margin: 30px;
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.icon  img{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 65px;
+    margin: 17px;
+    background-color: #fff7f709;
+    border-radius: 50%;
+    border: none;
+
+}
+
+.icon .photo{
+    width: 100px;
+
+}
+
+
+
+.icon p{
+    margin: 0;
+    padding: 0;
+    color: rgb(248, 247, 244);
+    font-weight: bold;
+}
+
+
+/*  video*/
+
+
+.video1{
+    width: auto;
+    padding: 0;
+    margin: 0;
+
+}
+.video{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    background-color: #fafafa;
+}
+
+.yout{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 500px;
+    height: 300px;
+    padding-bottom: 0;
+    box-shadow: 10px 5px 5px rgba(29, 219, 76, 0.884);
+}
+
+.yout iframe{
+    align-items: end;
+    width: 600px;
+    height: 300px;
+}
+
+
+.tex{
+    align-items: end;
+    width: 50%;
+    padding: 15px;
+    border: none;
+    margin-bottom: 120px;
+    
+}
+
+.tex h2{
+    color: #000000;
+    display: flex;
+    padding-bottom: 5px;
+    border: none;
+    font-size: 40px;
+    padding-left: 12px;
+}
+
+.tex p{
+    flex-wrap: wrap;
+    display: flex;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    text-align:left;
+}
+
+.tex button{
+    text-decoration: none;
+    display: flex;
+    background-color: rgba(29, 219, 76, 0.884);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid transparent;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.tex button:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgb(15, 161, 51),
+    0 0 25px rgba(47, 255, 57, 0.582), 0 0 50px rgba(47, 255, 57, 0.582),
+    0 0 100px rgba(47, 255, 57, 0.582), 0 0 200px rgba(47, 255, 57, 0.582);
+}
+
+/*formulario*/
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a434967;
+    flex-direction: column;
+    padding: 10px 45px;
+    width: 500px;
+    box-shadow: rgba(46, 240, 120, 0.4) 5px 5px, rgba(46, 240, 120, 0.4) 10px 10px, rgba(46, 240, 120, 0.4) 15px 15px, rgba(46, 240, 120, 0.4)20px 20px, rgba(46, 240, 120, 0.4) 25px 25px;
+
+}
+
+.form-h2{
+    color: #ddd3db;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    color: #e2dede;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom:20px ;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #ddd3db;
+    color: #ddd3db;
+    transition: all .5s;
+    margin-bottom: 15px;
+}
+
+form button:hover{
+    background: #ddd3db;
+    color: #000000;
+    border-radius: 16px;
+}
+
+
+
+
+</style>
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="{% static 'img/logo_gn.png' %}" alt="Logo GN" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="{% url 'core:home' %}" class="active">Home</a>
+            <a href="#" class="active">Cursos</a>
+            <a href="#" class="active">Sobre nós</a>
+            <a href="#" class="active">Contato</a>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+        <h1>CITEENEL </h1>
+    </div>
+
+    
+    <div class="container">
+
+        <main>
+            <div class="main__text">
+                <h1> <b>Boas-Vindas  AO CITEENEL 2023</b></h1>
+
+                <p>
+                    Sejam bem-vindos a 11ª edição do maior congresso sobre inovação tecnológica e eficiência do país.
+                     é o principal momento para discussão dos resultados e impactos do Programa de Pesquisa e Desenvolvimento (P&D) 
+                    regulado pela Agência e implementado pelas empresas geradoras, transmissoras e distribuidoras de energia.
+                </p>
+                <a href="#quero-participar" target=""><button>Garanta Sua Vaga</button></a>
+
+            </div>
+
+            <div class="form">
+                <h2 class="form-h2">Formulário</h2>
+                <form action="" method="post" id="quero-participar">
+                    {% csrf_token %}
+
+                    {% if form.errors %}
+                                    <div class="alert alert-danger" role="alert">
+                                      <ul>
+                                        {% for field in form %}
+                                          {% for error in field.errors %}
+                                            <li>{{ error}}</li>
+                                          {%endfor %}
+                                        {% endfor %}
+                                      </ul>
+                        </div>
+                    {% endif%}
+                    
+                    <label for="{{ form.nome.id_for_label }}">Nome</label>
+                    <input type="text" name="{{ form.nome.name }}" placeholder="Digite seu nome" id="{{ form.nome.id_for_label }}" autocomplete="off" required>
+                    
+                    <label for="{{ form.email.id_for_label }}">E-mail</label>
+                    <input type="email" name="{{ form.email.name }}" placeholder="Digite seu e-mail" id="{{ form.email.id_for_label }}" autocomplete="off" required>
+                    
+                    <label for="{{ form.instituicao_empresa.id_for_label }}">Você pertence a qual Instituição/Empresa?</label>
+                    <input type="text" name="{{ form.instituicao_empresa.name }}" placeholder="Digite a instituição/empresa" id="{{ form.instituicao_empresa.id_for_label }}" autocomplete="off" required>
+                    
+                    <label for="{{ form.como_conheceu.id_for_label }}">Como teve conhecimento do Citeenel 2023?</label>
+                    <br>
+                    <select name="{{ form.como_conheceu.name }}" id="{{ form.como_conheceu.id_for_label }}" required required style="height: 40px;">
+                        {% for value, label in form.como_conheceu.field.choices %}
+                            <option value="{{ value }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    
+                    <button type="submit">Enviar</button>
+                    
+                    {% comment %} <input type="hidden" name="accessKey" value="18aaef6a-3c3e-4b8f-ba46-30bf89509c1e">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/header-sidebar-responsive-main/obrigado.html"> {% endcomment %}
+                </form>
+                
+                
+            </div>
+
+        </main>
+    </div>
+
+    <section>
+        <div class="meio">
+            <h1>O EVENTO</h1>
+            <p>Ao longo das nove primeiras edições, entre 2001 e2017, o CITEENEL se consolidou como um espaço de divulgação e 
+                iscussão de inovações tecnológicas no setor elétrico, e
+                specialmente a partir dos projetos de eficiência energética e pesquisa e desenvolvimento (P&D).
+                Neste ano o tema será “ADEFINIR” e conta com a presença de “A DEFINIR”, 
+                e será sediado na cidade de São Luís, Maranhão, polo de desenvolvimento de energia eólica, 
+                além de ser reconhecida como Patrimônio Cultural Mundial pela UNESCO.
+            </p>
+            <img src="{% static 'img/banner.jpeg' %}" alt="">
+        </div>
+    </section>
+    
+    <section class="mid-icon">
+        <div class="icon">
+             <img src="{%  static 'img/palestra (2).png' %}" alt="">
+            <p>Palestras Silenciosas</p>
+        </div>
+
+        <div class="icon">
+            <i> <img  src="{% static 'img/pessoas (2).png' %}" alt=""></i>
+            <p .ani-ico>Vagas Limitadas</p>
+        </div>
+
+        <div class="icon">
+            <i> <img  src="{% static 'img/social (2).png' %}" alt=""></i>
+            <p>Evento 100% Presencial</p>
+        </div>
+        <div class="icon">
+            <i> <img  src="{% static 'img/cadeado (2).png' %}" alt=""></i>
+            <p>Compra Segura</p>
+        </div>
+
+    </section>
+
+    <section class="video1">
+        <main class="video">
+    
+            <div class="tex">
+                <h2>EXPOSENDI</h2>
+
+                <p>O SENDI 2023 vai reunir, num mesmo espaço, as grandes inovações e os mais modernos produtos, serviços e equipamentos da cadeia de distribuição de energia elétrica. Serão centenas de estandes apresentando, demonstrando e comercializando o que há de mais moderno no setor. O EXPOSENDI será um enorme show room, cheio de energia e inovação. 
+                    Não perca essa grande oportunidade de participar do Sendi 2023, estamos aguardando você.  
+                </p>
+
+                <a href="#quero-participar" style="text-decoration: none;" target=""><button>GARANTA SUA VAGA</button></a>
+            </div>
+
+
+            <div class="yout">
+                <iframe src="{% static 'img/videoplayback.mp4' %}" frameborder="0"></iframe>
+            </div>
+            
+        </main>
+    </section>
+
+    <section class="mid-icon">
+        <div class="icon">
+             <img class="photo" src="{% static 'img/+20.png' %}" alt="">
+            <p>Palestras Silenciosas</p>
+        </div>
+
+        <div class="icon">
+            <i> <img  class="photo" src="{% static 'img/+150.png' %}" alt=""></i>
+            <p>Vagas Limitadas</p>
+        </div>
+
+        <div class="icon">
+            <i> <img class="photo" src="{% static 'img/+230.png' %}" alt=""></i>
+            <p>Evento 100% Presencial</p>
+        </div>
+        <div class="icon">
+            <i> <img  class="photo" src="{% static 'img/+15.png' %}" alt=""></i>
+            <p>Compra Segura</p>
+        </div>
+
+    
+
+</body>
+<script>
+    var header           = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content          = document.getElementById('content');
+    var showSidebar      = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</html>
