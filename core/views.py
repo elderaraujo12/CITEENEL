@@ -7,16 +7,25 @@ from .forms import ParticipanteForm
 
 from .forms import ParticipanteForm
 
+from django.contrib import messages
+
+# ...
+
 def home(request):
+    
     if request.method == 'POST':
         form = ParticipanteForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('core:obrigado')
+        else:
+            # Adicionar mensagens de erro ao contexto
+            messages.error(request, 'Por favor, corrija os erros abaixo.')
     else:
         form = ParticipanteForm()
-     
+    
     return render(request, 'core/index.html', {'form': form})
+
 
 
 
