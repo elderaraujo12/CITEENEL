@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interagir com o Botão após Carregamento do DOM</title>
+</head>
+<body>
+
+
+    <!-- Script do widget -->
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+            w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+            js.id = o; js.src = f; js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+        }(window, document, 'script', 'widget4Events', 'https://cdn.4.events/mi-widget/bundle.js'));
+        
+        // Função para ativar o widget
+        function ativarWidget() {
+            widget4Events('init', {
+                client_id: '22776',
+                event_id: '2',
+                position: 'left',
+                button_text: 'GARANTA SUA VAGA',
+                language: 'pt-br',
+                image: 'https://vp2uploads.s3.amazonaws.com/22776/imagem_fundo_widget/89f118e75a7611fc0d92a968a80527b87f0e9329.png',
+                theme: {
+                    button_color: '#2bbf64',
+                    button_text_color: '#ffffff',
+                },
+            });
+        }
+
+        // Função para simular o clique
+        function click(id) {
+            var element = document.getElementById(id);
+            if (element && element.click) {
+                element.click();
+            } else {
+                console.log('Elemento não encontrado ou não suporta click.');
+            }
+        }
+
+        // Aguardar até que o DOM esteja pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            ativarWidget();
+            click('2');
+        });
+    </script>
+</body>
+</html>

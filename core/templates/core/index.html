@@ -1,4 +1,3 @@
-
 {% load static %}
 <!doctype html>
 <html lang="pt-BR">
@@ -11,6 +10,18 @@
 	<meta name="robots" content="max-image-preview:large">
 	<script type="application/javascript">console.log('PixelYourSite Free version 9.4.0.1');</script>
 	<link rel="dns-prefetch" href="//www.google.com">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 
 	<script>
 		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/sendi2023.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2" } };
@@ -31,7 +42,9 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel="stylesheet" id="wp-block-library-css" href="{% static 'css/style.min.css'%}" media="all">
+
+	<link rel="stylesheet" id="wp-block-library-css" href="{% static 'css/style.min.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/evento.css' %}" media="all">
 	<link rel="stylesheet" id="classic-theme-styles-css" href="{% static 'css/classic-themes.min.css' %}" media="all">
 	<style id="global-styles-inline-css">
 		body {
@@ -1247,7 +1260,7 @@
 	<style id="elementor-icons-inline-css">
 		.elementor-add-new-section .elementor-add-templately-promo-button {
 			background-color: #5d4fff;
-			background-image: url({% static 'fonts/logo-icon.svg' %});
+			background-image: url(fonts/logo-icon.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: relative;
@@ -1263,7 +1276,7 @@
 
 		.elementor-add-new-section .elementor-add-templately-promo-button {
 			background-color: #5d4fff;
-			background-image: url({% static 'fonts/logo-icon.svg' %});
+			background-image: url(fonts/logo-icon.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: relative;
@@ -1279,7 +1292,7 @@
 
 		.elementor-add-new-section .elementor-add-templately-promo-button {
 			background-color: #5d4fff;
-			background-image: url({% static 'fonts/logo-icon.svg' %});
+			background-image: url(fonts/logo-icon.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: relative;
@@ -1293,7 +1306,6 @@
 			margin-left: 0;
 		}
 	</style>
-	<link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
 	<link rel="stylesheet" id="swiper-css" href="{% static 'css/swiper.min.css' %}" media="all">
 	<link rel="stylesheet" id="elementor-post-5-css" href="{% static 'css/post-5.css' %}" media="all">
 	<link rel="stylesheet" id="elementor-pro-css" href="{% static 'css/frontend-lite.min.css' %}" media="all">
@@ -1304,7 +1316,8 @@
 	<link rel="stylesheet" id="happy-icons-css" href="{% static 'css/style.min_2.css' %}" media="all">
 	<link rel="stylesheet" id="font-awesome-css" href="{% static 'css/font-awesome.min.css' %}" media="all">
 	<link rel="stylesheet" id="happy-elementor-addons-10-css" href="{% static 'css/ha-10.css' %}" media="all">
-	<link rel="stylesheet" id="wpr-text-animations-css-css" href="{% static 'css/text-animations.min.css' %}" media="all">
+	<link rel="stylesheet" id="wpr-text-animations-css-css" href="{% static 'css/text-animations.min.css' %}"
+		media="all">
 	<link rel="stylesheet" id="wpr-addons-css-css" href="{% static 'css/frontend.min.css' %}" media="all">
 	<link rel="stylesheet" id="font-awesome-5-all-css" href="{% static 'css/all.min.css' %}" media="all">
 	<link rel="stylesheet" id="google-fonts-1-css"
@@ -1335,8 +1348,8 @@
 		href="https://sendi2023.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsendi2023.com.br%2F&#038;format=xml">
 	<meta name="generator"
 		content="Elementor 3.14.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-	<link rel="icon" href="{% static 'images/cropped-logo-sendi-2023-32x32.png' %}" sizes="32x32' %}">
-	<link rel="icon" href="{% static 'images/cropped-logo-sendi-2023-192x192.png' %}" sizes="192x192' %}">
+	<link rel="icon" href="{% static 'images/cropped-logo-sendi-2023-32x32.png' %}" sizes="32x32">
+	<link rel="icon" href="{% static 'images/cropped-logo-sendi-2023-192x192.png' %}" sizes="192x192">
 	<link rel="apple-touch-icon" href="{% static 'images/cropped-logo-sendi-2023-180x180.png' %}">
 	<meta name="msapplication-TileImage"
 		content="https://sendi2023.com.br/wp-content/uploads/2023/05/cropped-logo-sendi-2023-270x270.png">
@@ -1547,8 +1560,13 @@
 		</defs>
 	</svg>
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<!-- Include  Header-->
 
+	{% include 'components/cabecalho.html' %}
+
+	<!-- Header
 	<div data-elementor-type="header" data-elementor-id="87" class="elementor elementor-87 elementor-location-header">
+		
 		<section
 			class="elementor-section elementor-top-section elementor-element elementor-element-1e9e725 elementor-section-content-middle elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 			data-id="1e9e725" data-element_type="section"
@@ -1578,9 +1596,9 @@
 										vertical-align: middle;
 										display: inline-block
 									}
-								</style> <img width="2126" height="1181" src="/images/CITEENEL.png"
+								</style> <img width="2126" height="1181" src="{% static 'images/CITEENEL.png' %}"
 									class="attachment-full size-full wp-image-91" alt loading="lazy"
-									srcset="{% static 'images/logo-sendi-2023.png' %} 2126w, {% static 'images/logo-sendi-2023-300x167.png' %} 300w, {% static 'images/logo-sendi-2023-1024x569.png' %} 1024w, {% static 'images/logo-sendi-2023-768x427.png' %} 768w, {% static 'images/logo-sendi-2023-1536x853.png' %} 1536w,  {% static 'images/logo-sendi-2023-2048x1138.png' %} 2048w"
+									srcset="{% static 'images/logo-sendi-2023.png' %} 2126w, {% static 'images/logo-sendi-2023-300x167.png' %} 300w, {% static 'images/logo-sendi-2023-1024x569.png' %} 1024w, {% static 'images/logo-sendi-2023-768x427.png' %} 768w, {% static  'images/logo-sendi-2023-1536x853.png' %} 1536w, {% static 'images/logo-sendi-2023-2048x1138.png' %} 2048w"
 									sizes="(max-width: 2126px) 100vw, 2126px">
 							</div>
 						</div>
@@ -1600,11 +1618,13 @@
 									<ul id="menu-1-05b62a1" class="elementor-nav-menu">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85">
-											<a href="#sobre" class="elementor-item elementor-item-anchor">Sobre</a></li>
+											<a href="#sobre" class="elementor-item elementor-item-anchor">Sobre</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86">
 											<a href="#informacao"
-												class="elementor-item elementor-item-anchor">Informações</a></li>
+												class="elementor-item elementor-item-anchor">Informações</a>
+										</li>
 									</ul>
 								</nav>
 								<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
@@ -1621,11 +1641,13 @@
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85">
 											<a href="#sobre" class="elementor-item elementor-item-anchor"
-												tabindex="-1">Sobre</a></li>
+												tabindex="-1">Sobre</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86">
 											<a href="#informacao" class="elementor-item elementor-item-anchor"
-												tabindex="-1">Informações</a></li>
+												tabindex="-1">Informações</a>
+										</li>
 									</ul>
 								</nav>
 							</div>
@@ -1640,7 +1662,7 @@
 							<div class="elementor-widget-container">
 								<img width="800" height="289" src="{% static 'images/logo-ibradee-2-1024x370.png' %}"
 									class="attachment-large size-large wp-image-254" alt loading="lazy"
-									srcset="{% static 'images/logo-ibradee-2-1024x370.png' %} 1024w, images/logo-ibradee-2-300x108.png 300w, images/logo-ibradee-2-768x278.png 768w, images/logo-ibradee-2-1536x555.png 1536w, images/logo-ibradee-2-2048x740.png 2048w"
+									srcset="{% static 'images/logo-ibradee-2-1024x370.png' %} 1024w, {% static 'images/logo-ibradee-2-300x108.png' %} 300w, {% static 'images/logo-ibradee-2-768x278.png' %} 768w, {% static 'images/logo-ibradee-2-1536x555.png' %} 1536w, {% static 'images/logo-ibradee-2-2048x740.png' %} 2048w"
 									sizes="(max-width: 800px) 100vw, 800px">
 							</div>
 						</div>
@@ -1652,9 +1674,9 @@
 						<div class="elementor-element elementor-element-7cb1cc7 elementor-widget__width-initial elementor-widget elementor-widget-image"
 							data-id="7cb1cc7" data-element_type="widget" data-widget_type="image.default">
 							<div class="elementor-widget-container">
-								<img width="800" height="502" src="images/logo-edp-2-1024x643.png"
+								<img width="800" height="502" src="{% static 'images/logo-edp-2-1024x643.png' %}"
 									class="attachment-large size-large wp-image-255" alt loading="lazy"
-									srcset="{% static 'images/logo-edp-2-1024x643.png' %} 1024w, images/logo-edp-2-300x189.png 300w, images/logo-edp-2-768x483.png 768w, images/logo-edp-2-1536x965.png 1536w, images/logo-edp-2.png 1577w"
+									srcset="{% static 'images/logo-edp-2-1024x643.png' %} 1024w, {% static 'images/logo-edp-2-300x189.png' %} 300w, {% static 'images/logo-edp-2-768x483.png' %} 768w, {% static 'images/logo-edp-2-1536x965.png' %} 1536w, {% static 'images/logo-edp-2.png' %} 1577w"
 									sizes="(max-width: 800px) 100vw, 800px">
 							</div>
 						</div>
@@ -1662,7 +1684,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-36d7f68 elementor-section-content-middle elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
+		
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-36d7f68 elementor-section-content-middle elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 			data-id="36d7f68" data-element_type="section"
 			data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 			<div class="elementor-container elementor-column-gap-default">
@@ -1672,9 +1696,9 @@
 						<div class="elementor-element elementor-element-139b19c elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
 							data-id="139b19c" data-element_type="widget" data-widget_type="image.default">
 							<div class="elementor-widget-container">
-								<img width="2126" height="1181" src="images/logo-sendi-2023.png"
+								<img width="2126" height="1181" src="{% static 'images/logo-sendi-2023.png' %}"
 									class="attachment-full size-full wp-image-91" alt loading="lazy"
-									srcset="{% static 'images/logo-sendi-2023.png 2126w, images/logo-sendi-2023-300x167.png' %} 300w, {% static 'images/logo-sendi-2023-1024x569.png' %} 1024w, {% static 'images/logo-sendi-2023-768x427.png' %} 768w, {% static 'images/logo-sendi-2023-1536x853.png' %} 1536w, images/logo-sendi-2023-2048x1138.png 2048w"
+									srcset="{% static 'images/logo-sendi-2023.png' %} 2126w, {% static 'images/logo-sendi-2023-300x167.png' %} 300w, {% static 'images/logo-sendi-2023-1024x569.png' %} 1024w, {% static 'images/logo-sendi-2023-768x427.png' %} 768w, {% static 'images/logo-sendi-2023-1536x853.png' %} 1536w, {% static 'images/logo-sendi-2023-2048x1138.png' %} 2048w"
 									sizes="(max-width: 2126px) 100vw, 2126px">
 							</div>
 						</div>
@@ -1693,11 +1717,13 @@
 									<ul id="menu-1-4d31daa" class="elementor-nav-menu">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85">
-											<a href="#sobre" class="elementor-item elementor-item-anchor">Sobre</a></li>
+											<a href="#sobre" class="elementor-item elementor-item-anchor">Sobre</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86">
 											<a href="#informacao"
-												class="elementor-item elementor-item-anchor">Informações</a></li>
+												class="elementor-item elementor-item-anchor">Informações</a>
+										</li>
 									</ul>
 								</nav>
 								<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
@@ -1714,11 +1740,13 @@
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85">
 											<a href="#sobre" class="elementor-item elementor-item-anchor"
-												tabindex="-1">Sobre</a></li>
+												tabindex="-1">Sobre</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86">
 											<a href="#informacao" class="elementor-item elementor-item-anchor"
-												tabindex="-1">Informações</a></li>
+												tabindex="-1">Informações</a>
+										</li>
 									</ul>
 								</nav>
 							</div>
@@ -1733,7 +1761,7 @@
 							<div class="elementor-widget-container">
 								<img width="800" height="289" src="{% static 'images/logo-ibradee-2-1024x370.png' %}"
 									class="attachment-large size-large wp-image-254" alt loading="lazy"
-									srcset="{% static 'images/logo-ibradee-2-1024x370.png' %} 1024w, {%static 'images/logo-ibradee-2-300x108.png' %} 300w, images/logo-ibradee-2-768x278.png 768w, images/logo-ibradee-2-1536x555.png 1536w, images/logo-ibradee-2-2048x740.png 2048w"
+									srcset="{% static 'images/logo-ibradee-2-1024x370.png' %} 1024w, {% static 'images/logo-ibradee-2-300x108.png' %} 300w, {% static 'images/logo-ibradee-2-768x278.png' %} 768w, {% static 'images/logo-ibradee-2-1536x555.png' %} 1536w, {% static 'images/logo-ibradee-2-2048x740.png' %}  2048w"
 									sizes="(max-width: 800px) 100vw, 800px">
 							</div>
 						</div>
@@ -1747,7 +1775,7 @@
 							<div class="elementor-widget-container">
 								<img width="800" height="502" src="{% static 'images/logo-edp-2-1024x643.png' %}"
 									class="attachment-large size-large wp-image-255" alt loading="lazy"
-									srcset="{% static 'images/logo-edp-2-1024x643.png' %} 1024w, {% static 'images/logo-edp-2-300x189.png' %} 300w, images/logo-edp-2-768x483.png 768w, images/logo-edp-2-1536x965.png 1536w, images/logo-edp-2.png 1577w"
+									srcset="{% static 'images/logo-edp-2-1024x643.png' %} 1024w, {% static 'images/logo-edp-2-300x189.png' %} 300w, {% static 'images/logo-edp-2-768x483.png' %} 768w, {% static 'images/logo-edp-2-1536x965.png' %} 1536w, {% static 'images/logo-edp-2.png' %} 1577w"
 									sizes="(max-width: 800px) 100vw, 800px">
 							</div>
 						</div>
@@ -1756,9 +1784,9 @@
 			</div>
 		</section>
 	</div>
-
+	Fim header -->
 	<main id="content" class="site-main post-10 page type-page status-publish hentry">
-		<div class="page-content">
+		<div class="page-content ">
 			<div data-elementor-type="wp-page" data-elementor-id="10" class="elementor elementor-10">
 				<section
 					class="elementor-section elementor-top-section elementor-element elementor-element-447b287 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
@@ -1769,7 +1797,7 @@
 						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f56cf18"
 							data-id="f56cf18" data-element_type="column">
 							<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-c993b6f elementor-widget elementor-widget-text-editor"
+								<div class="elementor-element elementor-element-c993b6f elementor-widget elementor-widget-text-editor container"
 									data-id="c993b6f" data-element_type="widget" data-widget_type="text-editor.default">
 									<div class="elementor-widget-container">
 										<style>
@@ -1809,12 +1837,27 @@
 											25, 26 e 27 de outubro -
 											Blue Tree Towers
 											São Luís- Maranhão </p>
+										<h2 class="elementor-heading-title elementor-size-default"
+											style="font-size: 2.6rem; color:white; font-weight: bold;">Vem aí a 11ª
+											edição
+											do Congresso de Inovação Tecnológica e Eficiência
+											Energética no Setor Elétrico - Citeenel.</h2>
 									</div>
 								</div>
 								<div class="elementor-element elementor-element-4cf1e37 elementor-widget__width-initial elementor-widget elementor-widget-heading"
 									data-id="4cf1e37" data-element_type="widget" data-widget_type="heading.default">
 									<div class="elementor-widget-container">
 										<style>
+											.issue-content {
+												font-size: 0.9rem;
+												color: rgb(139, 137, 137);
+											}
+
+											.issue-title {
+												font-weight: bold;
+												font-size: 1.2rem;
+											}
+
 											/*! elementor - v3.14.0 - 26-06-2023 */
 											.elementor-heading-title {
 												padding: 0;
@@ -1848,9 +1891,7 @@
 												font-size: 59px
 											}
 										</style>
-										<h2 class="elementor-heading-title elementor-size-default">Vem aí a 11ª edição
-											do Congresso de Inovação Tecnológica e Eficiência
-											Energética no Setor Elétrico - Citeenel.</h2>
+
 									</div>
 								</div>
 								<div class="elementor-element elementor-element-710e904 elementor-absolute elementor-widget elementor-widget-image"
@@ -1869,7 +1910,8 @@
 									data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;ha_floating_fx&quot;:&quot;yes&quot;,&quot;ha_floating_fx_translate_toggle&quot;:&quot;yes&quot;,&quot;ha_floating_fx_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ha_floating_fx_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:5}},&quot;ha_floating_fx_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ha_floating_fx_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
 									data-widget_type="image.default">
 									<div class="elementor-widget-container">
-										<img decoding="async" width="300" height="300" src="{% static 'images/sendi-panela.png' %}"
+										<img decoding="async" width="300" height="300"
+											src="{% static 'images/sendi-panela.png' %}"
 											class="attachment-large size-large wp-image-261" alt loading="lazy"
 											srcset="{% static 'images/sendi-panela.png' %} 300w, {% static 'images/sendi-panela-150x150.png' %} 150w"
 											sizes="(max-width: 300px) 100vw, 300px">
@@ -1880,7 +1922,8 @@
 									data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;ha_floating_fx&quot;:&quot;yes&quot;,&quot;ha_floating_fx_translate_toggle&quot;:&quot;yes&quot;,&quot;ha_floating_fx_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ha_floating_fx_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:5}},&quot;ha_floating_fx_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ha_floating_fx_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
 									data-widget_type="image.default">
 									<div class="elementor-widget-container">
-										<img decoding="async" width="400" height="400" src="{% static 'images/convento.png' %}"
+										<img decoding="async" width="400" height="400"
+											src="{% static 'images/convento.png' %}"
 											class="attachment-large size-large wp-image-260" alt loading="lazy"
 											srcset="{% static 'images/convento.png' %} 400w, {% static 'images/convento-300x300.png' %} 300w, {% static 'images/convento-150x150.png' %} 150w"
 											sizes="(max-width: 400px) 100vw, 400px">
@@ -1989,10 +2032,12 @@
 								</div>
 								<div class="elementor-element elementor-element-8f37573 elementor-widget elementor-widget-heading"
 									data-id="8f37573" data-element_type="widget" data-widget_type="heading.default">
+									<a href="#quero-participar">
 									<div class="elementor-widget-container">
 										<h2 class="elementor-heading-title elementor-size-default">Quero me inscrever
 											agora</h2>
 									</div>
+									</a>
 								</div>
 								<div class="elementor-element elementor-element-d5154e0 elementor-button-align-stretch elementor-widget elementor-widget-form"
 									data-id="d5154e0" data-element_type="widget"
@@ -2263,69 +2308,68 @@
 												content: "" !important
 											}
 										</style>
-										<form class="elementor-form" method="post" name="New Form">
-											<input type="hidden" name="post_id" value="10">
-											<input type="hidden" name="form_id" value="d5154e0">
-											<input type="hidden" name="referer_title" value>
-
-
-
-											<input type="hidden" name="queried_id" value="10">
+										{% if sucesso %}
+										<div class="alert alert-success alert-dismissible fade show" role="alert">
+											Cadastro realizado com sucesso!
+											<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+									{% endif %}
+										<form  method="post" action="{% url 'core:home' %}" id="quero-participar">
+											{% csrf_token %}
+											
 
 											<div class="elementor-form-fields-wrapper elementor-labels-above">
-												<div
-													class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
-													<input size="1" type="text" name="form_fields[name]"
-														id="form-field-name"
-														class="elementor-field elementor-size-sm  elementor-field-textual"
-														placeholder="Name" required>
+												<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+													<input size="1" type="text" name="{{ form.nome.name }}" id="{{ form.nome.id_for_label }}"
+														class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nome" required>
 												</div>
-												<div
-													class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required elementor-mark-required">
-													<input size="1" type="email" name="form_fields[email]"
-														id="form-field-email"
-														class="elementor-field elementor-size-sm  elementor-field-textual"
-														placeholder="E-mail" required="required" aria-required="true">
+												<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required elementor-mark-required">
+													<input size="1" type="email" name="{{ form.email.name }}" id="{{ form.email.id_for_label }}"
+														class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="E-mail" required="required" aria-required="true">
 												</div>
-												<div
-													class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
-													<input size="1" type="text" name="form_fields[name]"
-														id="form-field-name"
-														class="elementor-field elementor-size-sm  elementor-field-textual"
-														placeholder="Você pertence a qual Instituição/Empresa?"
-														required>
+												<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+													<input size="1" type="text" name="{{ form.instituicao_empresa.name }}" id="{{ form.instituicao_empresa.id_for_label }}"
+														class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Você pertence a qual Instituição/Empresa?" required>
 												</div>
-												<div
-													class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
-													<input size="1" type="text" name="form_fields[name]"
-														id="form-field-name"
-														class="elementor-field elementor-size-sm  elementor-field-textual"
-														placeholder="Como teve conhecimento do Citeenel 2023? (Redes sociais, E-mail, Colegas e etc.)"
-														required>
+												<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+													<select name="{{ form.como_conheceu.name }}" id="{{ form.como_conheceu.id_for_label }}" required required class="elementor-field elementor-size-sm  elementor-field-textual">
+														<option   value="" class="elementor-field elementor-size-sm  elementor-field-textual" style="background-color: #123544;"  disabled selected>Como teve conhecimento do Citeenel 2023?</option> <!-- Placeholder -->
+												
+														
+														{% for value, label in form.como_conheceu.field.choices %}
+														<option value="{{ value }}" class="elementor-field elementor-size-sm  elementor-field-textual" style="background-color: #123544;">{{ label }}</option>
+														{% endfor %}
+													</select>
 												</div>
-												<div
-													class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+												
+												<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
 													<button type="submit" class="elementor-button elementor-size-sm">
 														<span>
-															<span class=" elementor-button-icon">
+															<span class="elementor-button-icon">
 															</span>
 															<span class="elementor-button-text">Garanta Sua Vaga</span>
 														</span>
 													</button>
+													<div id="form-message" class="mt-3 text-center" style="display: none;"></div>
 												</div>
 											</div>
 										</form>
-									</div>
+										
+										
+																			</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section
-					class="elementor-section elementor-top-section elementor-element elementor-element-d9e9a97 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
+
+				<!--Sessão videos -->
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d9e9a97 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
 					data-id="d9e9a97" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;_ha_eqh_enable&quot;:false}">
-					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-container elementor-column-gap-default container">
 						<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8149b71"
 							data-id="8149b71" data-element_type="column">
 							<div class="elementor-widget-wrap elementor-element-populated">
@@ -2455,6 +2499,9 @@
 						</div>
 					</div>
 				</section>
+				<!-- Fim Sessão videos -->
+
+				<!--Sessao banner -->
 				<section
 					class="elementor-section elementor-top-section elementor-element elementor-element-4d35340 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
 					data-id="4d35340" data-element_type="section"
@@ -2514,6 +2561,7 @@
 								d="M2600 0L0 0 0 130.1 2600 69.1z" />
 						</svg>
 					</div>
+
 					<div class="elementor-container elementor-column-gap-default">
 						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e35ad9"
 							data-id="4e35ad9" data-element_type="column">
@@ -2525,51 +2573,45 @@
 											src="{% static 'images/Formato-em-blocos-Story-400-%C3%83_-400-px-1.png' %}"
 											class="elementor-animation-wobble-bottom attachment-full size-full wp-image-385"
 											alt loading="lazy"
-											srcset="{% static 'images/Formato-em-blocos-Story-400-%C3%83_-400-px-1.png' %} 400w, images/Formato-em-blocos-Story-400-%C3%83_-400-px-1-300x300.png 300w, images/Formato-em-blocos-Story-400-%C3%83_-400-px-1-150x150.png 150w"
+											srcset="{% static 'images/Formato-em-blocos-Story-400-%C3%83_-400-px-1.png' %} 400w, {% static 'images/Formato-em-blocos-Story-400-%C3%83_-400-px-1-300x300.png' %} 300w, {% static 'images/Formato-em-blocos-Story-400-%C3%83_-400-px-1-150x150.png' %} 150w"
 											sizes="(max-width: 400px) 100vw, 400px">
 									</div>
-
-
 								</div>
 							</div>
 						</div>
 				</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-a189540 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
+				<!--Fim Sessao banner -->
+
+
+
+
+
+				<!-- Fotos do evento -->
+				<section
+					class="elementor-section elementor-top-section elementor-element elementor-element-a189540  elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible container"
 					data-id="a189540" data-element_type="section"
 					data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;_ha_eqh_enable&quot;:false}">
-					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-container row">
 						<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b75961"
 							data-id="3b75961" data-element_type="column">
 							<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-0882dba elementor-widget elementor-widget-heading"
 									data-id="0882dba" data-element_type="widget" data-widget_type="heading.default">
 									<div class="elementor-widget-container">
-										<h2 class="elementor-heading-title elementor-size-default">ExpoSendi</h2>
+										<h2 class="elementor-heading-title elementor-size-default">Fotos do Evento</h2>
 									</div>
 								</div>
 								<div class="elementor-element elementor-element-c80cc90 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
 									data-id="c80cc90" data-element_type="widget" data-widget_type="text-editor.default">
 									<div class="elementor-widget-container">
-										<p><span style="vertical-align: inherit;"><span
-													style="vertical-align: inherit;">O evento é realizado pela ANEEL e é
-													o principal momento para discussão dos
-													resultados e impactos do Programa de Pesquisa e Desenvolvimento
-													(P&D) e
-													Eficiência Energética (PEE) regulados pela Agência e implementado
-													pelas empresas
-													geradoras, transmissoras e distribuidoras de energia. </span></span>
+										<p> O evento é realizado pela ANEEL e é
+											o principal momento para discussão dos
+											resultados e impactos do Programa de Pesquisa e Desenvolvimento
+											(P&D) e
+
 										</p>
-										<p><span style="vertical-align: inherit;"><span
-													style="vertical-align: inherit;"><span
-														style="vertical-align: inherit;"><span
-															style="vertical-align: inherit;"><span
-																style="vertical-align: inherit;"><span
-																	style="vertical-align: inherit;"><span
-																		style="vertical-align: inherit;"><span
-																			style="vertical-align: inherit;">Não perca
-																			essa grande oportunidade de participar do
-																			Sendi 2023, estamos aguardando
-																			você.  </span></span></span></span></span></span></span></span>
+										<p>Não perca essa grande oportunidade de participar do Sendi 2023, estamos
+											aguardando você.
 										</p>
 									</div>
 								</div>
@@ -2600,6 +2642,7 @@
 									<div class="elementor-widget-container">
 										<style>
 											/*! elementor-pro - v3.13.0 - 08-05-2023 */
+
 											.elementor-slides .swiper-slide-bg {
 												background-size: cover;
 												background-position: 50%;
@@ -2727,189 +2770,56 @@
 												}
 											}
 										</style>
-										<div class="elementor-swiper">
-											<div class="elementor-slides-wrapper elementor-main-swiper swiper" dir="ltr"
-												data-animation="fadeInUp">
-												<div class="swiper-wrapper elementor-slides">
-													<div class="elementor-repeater-item-19921e1 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-9c361ca swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-f84faa5 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-44657a3 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-5d17b85 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-0353b18 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
+										<div id="carouselFotosEvento" class="carousel slide" data-ride="carousel">
+
+											<div class="carousel-inner">
+												<!-- <div class="carousel-item active">
+													<img class="d-block w-100 image-fluid" src="{% static 'images/fotos-evento/1.png' %}"
+														alt="First slide">
+												</div> -->
+												<div class="carousel-item active">
+													<img class="d-block w-100" src="{% static 'images/fotos-evento/2.png' %}" alt="Second slide">
 												</div>
-												<div class="swiper-pagination"></div>
-												<div class="elementor-swiper-button elementor-swiper-button-prev"
-													role="button" tabindex="0">
-													<i aria-hidden="true" class="eicon-chevron-left"></i> <span
-														class="elementor-screen-only">Previous slide</span>
+												<div class="carousel-item">
+													<img class="d-block w-100"	src="{% static 'images/fotos-evento/3.png' %}" alt="Second slide">
 												</div>
-												<div class="elementor-swiper-button elementor-swiper-button-next"
-													role="button" tabindex="0">
-													<i aria-hidden="true" class="eicon-chevron-right"></i> <span
-														class="elementor-screen-only">Next slide</span>
+
+												<div class="carousel-item">
+													<img class="d-block w-100" src="{% static 'images/fotos-evento/4.png' %}" alt="Second slide">
 												</div>
+
+												<div class="carousel-item">
+													<img class="d-block w-100"	src="{% static 'images/fotos-evento/5.png' %}" alt="Second slide">
+												</div>
+
+												<div class="carousel-item">
+													<img class="d-block w-100"	src="{% static 'images/fotos-evento/6.png' %}" alt="Second slide">
+												</div>
+
+												
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-52a3790 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
-					data-id="52a3790" data-element_type="section"
-					data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;_ha_eqh_enable&quot;:false}">
-					<div class="elementor-container elementor-column-gap-default">
-						<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-98cf56f"
-							data-id="98cf56f" data-element_type="column">
-							<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-0da2ad5 elementor-widget__width-initial elementor--h-position-center elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides"
-									data-id="0da2ad5" data-element_type="widget"
-									data-settings="{&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;,&quot;transition_speed&quot;:500}"
-									data-widget_type="slides.default">
-									<div class="elementor-widget-container">
-										<div class="elementor-swiper">
-											<div class="elementor-slides-wrapper elementor-main-swiper swiper" dir="ltr"
-												data-animation="fadeInUp">
-												<div class="swiper-wrapper elementor-slides">
-													<div class="elementor-repeater-item-19921e1 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-9c361ca swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-f84faa5 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-44657a3 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-5d17b85 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-													<div class="elementor-repeater-item-0353b18 swiper-slide">
-														<div class="swiper-slide-bg" role="img"></div>
-														<div class="swiper-slide-inner">
-															<div class="swiper-slide-contents"></div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-pagination"></div>
-												<div class="elementor-swiper-button elementor-swiper-button-prev"
-													role="button" tabindex="0">
-													<i aria-hidden="true" class="eicon-chevron-left"></i> <span
-														class="elementor-screen-only">Previous slide</span>
-												</div>
-												<div class="elementor-swiper-button elementor-swiper-button-next"
-													role="button" tabindex="0">
-													<i aria-hidden="true" class="eicon-chevron-right"></i> <span
-														class="elementor-screen-only">Next slide</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9590e3b"
-							data-id="9590e3b" data-element_type="column">
-							<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-05f05b8 elementor-widget elementor-widget-heading"
-									data-id="05f05b8" data-element_type="widget" data-widget_type="heading.default">
-									<div class="elementor-widget-container">
-										<h2 class="elementor-heading-title elementor-size-default">ExpoSendi</h2>
-									</div>
-								</div>
-								<div class="elementor-element elementor-element-d8d6109 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-									data-id="d8d6109" data-element_type="widget" data-widget_type="text-editor.default">
-									<div class="elementor-widget-container">
-										<p><span style="vertical-align: inherit;"><span
-													style="vertical-align: inherit;">O SENDI 2023 vai reunir, num mesmo
-													espaço, as grandes inovações e os mais modernos produtos, serviços e
-													equipamentos da cadeia de distribuição de energia elétrica. Serão
-													centenas de estandes apresentando, demonstrando e comercializando o
-													que há de mais moderno no setor. O EXPOSENDI será um enorme show
-													room, cheio de energia e inovação. </span></span></p>
-										<p><span style="vertical-align: inherit;"><span
-													style="vertical-align: inherit;"><span
-														style="vertical-align: inherit;"><span
-															style="vertical-align: inherit;"><span
-																style="vertical-align: inherit;"><span
-																	style="vertical-align: inherit;"><span
-																		style="vertical-align: inherit;"><span
-																			style="vertical-align: inherit;">Não perca
-																			essa grande oportunidade de participar do
-																			Sendi 2023, estamos aguardando
-																			você.  </span></span></span></span></span></span></span></span>
-										</p>
-									</div>
-								</div>
-								<div class="elementor-element elementor-element-3a2dc9c elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"
-									data-id="3a2dc9c" data-element_type="widget"
-									data-settings="{&quot;ha_floating_fx&quot;:&quot;yes&quot;,&quot;ha_floating_fx_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ha_floating_fx_translate_toggle&quot;:&quot;yes&quot;,&quot;ha_floating_fx_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:5}},&quot;ha_floating_fx_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ha_floating_fx_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
-									data-widget_type="button.default">
-									<div class="elementor-widget-container">
-										<div class="elementor-button-wrapper">
-											<a class="elementor-button elementor-button-link elementor-size-sm"
-												href="#">
-												<span class="elementor-button-content-wrapper">
-													<span class="elementor-button-text">Me inscrever agora</span>
-												</span>
+											<a class="carousel-control-prev" href="#carouselFotosEvento"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselFotosEvento"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
 											</a>
 										</div>
+
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-5e965db elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
+
+				<!-- Fim Sessao Palestrantes-->
+				<section
+					class="elementor-section elementor-top-section elementor-element elementor-element-5e965db elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
 					data-id="5e965db" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;_ha_eqh_enable&quot;:false}">
 					<div class="elementor-container elementor-column-gap-default">
@@ -3023,7 +2933,137 @@
 						</div>
 					</div>
 				</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-c9b1068 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
+				<!-- Fim carrossel -->
+
+				<!-- Sessao duvidas -->
+				<div class="container">
+					<section class='event-faq'>
+						<div class='faq-container'>
+							<hgroup class='faq-title'>
+								<h1 class='d-title'>
+									Qual a sua duvida? Agente tira... </h1>
+							</hgroup>
+							<div class='faq-grp'>
+								<div class='issue-box' data-id='3' data-index-id='-1'>
+									<div class='issue-preview'>
+										<div class='issue-title'>
+											<h2>QUANDO SERÁ O CITEENEL 2023?</h2>
+										</div>
+										<div class='issue-controller'>
+											<a class='btn-plus'>
+												<i class='icon-4events plus'></i>
+											</a>
+											<a class='btn-less'>
+												<i class='icon-4events less'></i>
+											</a>
+										</div>
+									</div>
+									<div class='issue-content'>
+										O CITEENEL 2023 será realizado nos dias 25, 26 e 27 de outubro. </div>
+								</div>
+								<div class='issue-box' data-id='4' data-index-id='-1'>
+									<div class='issue-preview'>
+										<div class='issue-title'>
+											<h2>ONDE SERÁ O CITEENEL 2023?</h2>
+										</div>
+										<div class='issue-controller'>
+											<a class='btn-plus'>
+												<i class='icon-4events plus'></i>
+											</a>
+											<a class='btn-less'>
+												<i class='icon-4events less'></i>
+											</a>
+										</div>
+									</div>
+									<div class='issue-content'>
+										O CITEENEL 2023 será realizado em São Luís (MA) no Blue Tree Towers, e
+										acontecerá
+										na modalidade hibrida-presencial, com transmissão on-line do conteúdo.. </div>
+								</div>
+								<div class='issue-box' data-id='5' data-index-id='-1'>
+									<div class='issue-preview'>
+										<div class='issue-title'>
+											<h2>QUEM PODE PARTICIPAR DO CITEENEL 2023?
+											</h2>
+										</div>
+										<div class='issue-controller'>
+											<a class='btn-plus'>
+												<i class='icon-4events plus'></i>
+											</a>
+											<a class='btn-less'>
+												<i class='icon-4events less'></i>
+											</a>
+										</div>
+									</div>
+									<div class='issue-content'>
+										Profissionais do setor elétrico, fabricantes, academia, startups, instituições
+										de pesquisa e
+										profissionais de inovação </div>
+								</div>
+								<div class='issue-box' data-id='6' data-index-id='-1'>
+									<div class='issue-preview'>
+										<div class='issue-title'>
+											<h2>COMO ESCOLHER A MODALIDADE DE PARTICIPAÇÃO NO CITEENEL
+												2023?
+											</h2>
+										</div>
+										<div class='issue-controller'>
+											<a class='btn-plus'>
+												<i class='icon-4events plus'></i>
+											</a>
+											<a class='btn-less'>
+												<i class='icon-4events less'></i>
+											</a>
+										</div>
+									</div>
+									<div class='issue-content'>
+										No ato da inscrição o participante pode optar por participar na modalidade
+										presencial ou
+										na modalidade on-line. Na opção on-line o participante receberá no dia do evento
+										um link
+										para acessar a transmissão. Para cada dia será enviado um link diferente..
+									</div>
+								</div>
+								<div class='issue-box' data-id='6' data-index-id='-1'>
+									<div class='issue-preview'>
+										<div class='issue-title'>
+											<h2>O CITEENEL 2023 TERÁ CERTIFICAÇÃO?
+											</h2>
+										</div>
+										<div class='issue-controller'>
+											<a class='btn-plus'>
+												<i class='icon-4events plus'></i>
+											</a>
+											<a class='btn-less'>
+												<i class='icon-4events less'></i>
+											</a>
+										</div>
+									</div>
+									<div class='issue-content'>
+										Sim, ao final do evento o participante, tanto da modalidade presencial como da
+										modalidade on-line, receberá o certificado no e-mail cadastrado no ato da
+										inscrição no
+										<a href="site www.citeenel2023.com.br"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class='event-sponsors'>
+						<div class='sponsors-container lista-patrocinadores-content' id='listaPatrocinadores29873'>
+							<hgroup class='sponsor-title'>
+								<h1 class='d-title'>
+									Patrocinadores
+								</h1>
+							</hgroup>
+						</div>
+					</section>
+
+				</div>
+				<!-- Fim duvidas -->
+				<!--{% comment %} <section {% endcomment %} {% comment %}
+					class="elementor-section elementor-top-section elementor-element elementor-element-c9b1068 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 					data-id="c9b1068" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 					<div class="elementor-background-overlay"></div>
@@ -3271,13 +3311,14 @@
 
 										</div>
 									</div>
-				</section>
+				</section> {% endcomment %} -->
 
-
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-a189540  elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
+				<!-- logo das Empresa -->
+				<section
+					class="elementor-section elementor-top-section elementor-element elementor-element-a189540  elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible container"
 					data-id="a189540" data-element_type="section"
 					data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;_ha_eqh_enable&quot;:false}">
-					<div class="elementor-container">
+					<div class="elementor-container row">
 						<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b75961"
 							data-id="3b75961" data-element_type="column">
 							<div class="elementor-widget-wrap elementor-element-populated">
@@ -3290,26 +3331,14 @@
 								<div class="elementor-element elementor-element-c80cc90 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
 									data-id="c80cc90" data-element_type="widget" data-widget_type="text-editor.default">
 									<div class="elementor-widget-container">
-										<p><span style="vertical-align: inherit;"><span
-													style="vertical-align: inherit;">O evento é realizado pela ANEEL e é
-													o principal momento para discussão dos
-													resultados e impactos do Programa de Pesquisa e Desenvolvimento
-													(P&D) e
-													Eficiência Energética (PEE) regulados pela Agência e implementado
-													pelas empresas
-													geradoras, transmissoras e distribuidoras de energia. </span></span>
+										<p>O evento é realizado pela ANEEL e é
+											o principal momento para discussão dos
+											resultados e impactos do Programa de Pesquisa e Desenvolvimento
+											(P&D) e
+
 										</p>
-										<p><span style="vertical-align: inherit;"><span
-													style="vertical-align: inherit;"><span
-														style="vertical-align: inherit;"><span
-															style="vertical-align: inherit;"><span
-																style="vertical-align: inherit;"><span
-																	style="vertical-align: inherit;"><span
-																		style="vertical-align: inherit;"><span
-																			style="vertical-align: inherit;">Não perca
-																			essa grande oportunidade de participar do
-																			Sendi 2023, estamos aguardando
-																			você.  </span></span></span></span></span></span></span></span>
+										<p>Não perca essa grande oportunidade de participar do Sendi 2023, estamos
+											aguardando você.
 										</p>
 									</div>
 								</div>
@@ -3340,7 +3369,7 @@
 									<div class="elementor-widget-container">
 										<style>
 											/*! elementor-pro - v3.13.0 - 08-05-2023 */
-											
+
 											.elementor-slides .swiper-slide-bg {
 												background-size: cover;
 												background-position: 50%;
@@ -3466,9 +3495,48 @@
 													line-height: 1.4;
 													margin-bottom: 15px
 												}
+												/* #carrossel-logo-empresas span.carousel-control-prev-icon{
+													background-color: rgb(205, 209, 205);
+													
+												} */
+											
 											}
 										</style>
-										<div class="elementor-swiper">
+								
+										<div id="carrossel-logo-empresas" class="carousel carousel-dark slide" data-ride="carousel">
+
+											<div class="carousel-inner" style="height: 20hv;">
+												<div class="carousel-item active">
+													<img class="d-block w-100" src="{% static 'images/logo-empresa/1-1.png' %}"
+														alt="First slide">
+												</div>
+												<div class="carousel-item">
+													<img class="d-block w-100"
+														src="{% static 'images/logo-empresa/1-2 (1).png' %}" alt="Second slide">
+												</div>
+												<div class="carousel-item">
+													<img class="d-block w-100"
+														src="{% static 'images/logo-empresa/1-2 (2).png' %}" alt="Third slide">
+												</div>
+
+												<div class="carousel-item">
+													<img class="d-block w-100"
+														src="{% static 'images/logo-empresa/1-2 (3).png' %}" alt="Third slide">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carrossel-logo-empresas"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only" >Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carrossel-logo-empresas"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+										<!-- Carrossel -->
+										<!-- <div class="elementor-swiper">
 											<div class="elementor-slides-wrapper elementor-main-swiper swiper" dir="ltr"
 												data-animation="fadeInUp">
 												<div class="swiper-wrapper elementor-slides">
@@ -3521,16 +3589,17 @@
 														class="elementor-screen-only">Next slide</span>
 												</div>
 											</div>
-										</div>
+										</div> -->
+										<!-- Carrossel -->
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+				<!-- Fim logo das Empresa -->
 
-				<section
-					class="elementor-section elementor-top-section elementor-element elementor-element-46d08cd elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-46d08cd elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 					data-id="46d08cd" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 					<div class="elementor-container elementor-column-gap-default">
@@ -3548,8 +3617,8 @@
 						</div>
 					</div>
 				</section>
-				<section
-					class="elementor-section elementor-top-section elementor-element elementor-element-e8f254e elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
+
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e8f254e elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible"
 					data-id="e8f254e" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;_ha_eqh_enable&quot;:false}">
 					<div class="elementor-container elementor-column-gap-default">
@@ -3590,7 +3659,7 @@
 																	src="{% static 'images/WhatsApp-Image-2023-05-18-at-17.46.34.jpeg' %}"
 																	class="attachment-full size-full wp-image-613" alt
 																	decoding="async" loading="lazy"
-																	srcset="{% static 'images/WhatsApp-Image-2023-05-18-at-17.46.34.jpeg' %} 1202w, images/WhatsApp-Image-2023-05-18-at-17.46.34-225x300.jpeg 225w, images/WhatsApp-Image-2023-05-18-at-17.46.34-769x1024.jpeg 769w, images/WhatsApp-Image-2023-05-18-at-17.46.34-768x1022.jpeg 768w, images/WhatsApp-Image-2023-05-18-at-17.46.34-1154x1536.jpeg 1154w"
+																	srcset="{% static 'images/WhatsApp-Image-2023-05-18-at-17.46.34.jpeg' %} 1202w, {% static 'images/WhatsApp-Image-2023-05-18-at-17.46.34-225x300.jpeg' %} 225w, {% static 'images/WhatsApp-Image-2023-05-18-at-17.46.34-769x1024.jpeg' %} 769w, {% static 'images/WhatsApp-Image-2023-05-18-at-17.46.34-768x1022.jpeg' %}S 768w, {% static 'images/WhatsApp-Image-2023-05-18-at-17.46.-1154x1536.jpeg' %} 1154w"
 																	sizes="(max-width: 1202px) 100vw, 1202px">
 															</div>
 
@@ -3628,7 +3697,7 @@
 																	src="{% static 'images/WhatsApp-Image-2023-05-15-at-16.03.27.jpeg' %}"
 																	class="attachment-full size-full wp-image-395" alt
 																	decoding="async" loading="lazy"
-																	srcset="{% static 'images/WhatsApp-Image-2023-05-15-at-16.03.27.jpeg' %} 960w, images/WhatsApp-Image-2023-05-15-at-16.03.27-225x300.jpeg 225w, images/WhatsApp-Image-2023-05-15-at-16.03.27-768x1024.jpeg 768w"
+																	srcset="{% static 'images/WhatsApp-Image-2023-05-15-at-16.03.27.jpeg' %} 960w, {% static 'images/WhatsApp-Image-2023-05-15-at-16.03.27-225x300.jpeg' %} 225w, {% static 'images/WhatsApp-Image-2023-05-15-at-16.03.27-768x1024.jpeg' %}	 768w"
 																	sizes="(max-width: 960px) 100vw, 960px">
 															</div>
 
@@ -3671,7 +3740,7 @@
 																	src="{% static 'images/WhatsApp-Image-2023-05-18-at-17.47.17.jpeg' %}"
 																	class="attachment-full size-full wp-image-612" alt
 																	decoding="async" loading="lazy"
-																	srcset="{% static 'images/WhatsApp-Image-2023-05-18-at-17.47.17.jpeg' %} 400w, {% static 'images/WhatsApp-Image-2023-05-18-at-17.47.17-300x300.jpeg' %} 300w, images/WhatsApp-Image-2023-05-18-at-17.47.17-150x150.jpeg 150w"
+																	srcset="{% static 'images/WhatsApp-Image-2023-05-18-at-17.47.17.jpeg 400w, images/WhatsApp-Image-2023-05-18-at-17.47.17-300x300.jpeg' %} 300w, {% static 'images/WhatsApp-Image-2023-05-18-at-17.47.17-150x150.jpeg' %} 150w"
 																	sizes="(max-width: 400px) 100vw, 400px">
 															</div>
 
@@ -3692,8 +3761,8 @@
 						</div>
 					</div>
 				</section>
-				<section
-					class="elementor-section elementor-top-section elementor-element elementor-element-04fad2e elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
+				<!-- Cidade Sao Luis -->
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-04fad2e elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 					data-id="04fad2e" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
 					<div class="elementor-container elementor-column-gap-default">
 						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-76cec1d"
@@ -3732,8 +3801,7 @@
 						</div>
 					</div>
 				</section>
-				<section
-					class="elementor-section elementor-top-section elementor-element elementor-element-865437d elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-865437d elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 					data-id="865437d" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
 					<div class="elementor-container elementor-column-gap-default">
@@ -3745,29 +3813,32 @@
 									<div class="elementor-widget-container">
 										<p></p>
 										<div id="Inscricoes_lote1w1_14103" align="center">
-											<div id="carouselExampleIndicators" class="carousel slide"
+											<div id="carousel-cidades" class="carousel slide"
 												data-ride="carousel">
 
 												<div class="carousel-inner">
 													<div class="carousel-item active">
-														<img class="d-block w-100" src="{% static 'images/sao-luis1.png' %}"
+														<img class="d-block w-100"
+															src="{% static 'images/cidades/SAO-LUIS-1.png' %}"
 															alt="First slide">
 													</div>
 													<div class="carousel-item">
-														<img class="d-block w-100" src="{% static 'images/sao-luis-2.png' %}"
+														<img class="d-block w-100"
+															src="{% static 'images/cidades/SAO-LUIS-2.png' %}"
 															alt="Second slide">
 													</div>
 													<div class="carousel-item">
-														<img class="d-block w-100" src="{% static 'images/sao-luis-3.png' %}"
+														<img class="d-block w-100"
+															src="{% static 'images/cidades/SAO-LUIS-3.png' %}"
 															alt="Third slide">
 													</div>
 												</div>
-												<a class="carousel-control-prev" href="#carouselExampleIndicators"
+												<a class="carousel-control-prev" href="#carousel-cidades"
 													role="button" data-slide="prev">
 													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 													<span class="sr-only">Previous</span>
 												</a>
-												<a class="carousel-control-next" href="#carouselExampleIndicators"
+												<a class="carousel-control-next" href="#carousel-cidades"
 													role="button" data-slide="next">
 													<span class="carousel-control-next-icon" aria-hidden="true"></span>
 													<span class="sr-only">Next</span>
@@ -3793,7 +3864,7 @@
 										<div class="elementor-widget-container">
 											<div class="elementor-button-wrapper">
 												<a class="elementor-button elementor-button-link elementor-size-sm"
-													href="#">
+													href="#quero-participar">
 													<span class="elementor-button-content-wrapper">
 														<span class="elementor-button-text">Me inscrever agora</span>
 													</span>
@@ -3801,6 +3872,7 @@
 											</div>
 										</div>
 									</div>
+									
 									<div class="elementor-element elementor-element-4f27d38 elementor-widget elementor-widget-menu-anchor"
 										data-id="4f27d38" data-element_type="widget"
 										data-widget_type="menu-anchor.default">
@@ -3813,8 +3885,9 @@
 						</div>
 					</div>
 				</section>
-				<section
-					class="elementor-section elementor-top-section elementor-element elementor-element-b736fbb elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
+
+
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b736fbb elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no"
 					data-id="b736fbb" data-element_type="section"
 					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;bottom&quot;,&quot;_ha_eqh_enable&quot;:false,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
 					<div class="elementor-container elementor-column-gap-default">
@@ -3938,19 +4011,20 @@
 
 
 
-	<div class="gtranslate_wrapper" id="gt-wrapper-58178032"></div><noscript><img height="1" width="1"
+	<div class="gtranslate_wrapper" hidden id="gt-wrapper-58178032"></div><noscript><img height="1" width="1"
 			style="display: none;" src="tr" alt></noscript>
 	<link rel="stylesheet" id="e-animations-css" href="{% static 'css/animations.min.css' %}" media="all">
 	<script id="eael-general-js-extra">
 		var localize = { "ajaxurl": "https:\/\/sendi2023.com.br\/wp-admin\/admin-ajax.php", "nonce": "38722167a7", "i18n": { "added": "Added ", "compare": "Compare", "loading": "Loading..." }, "eael_translate_text": { "required_text": "is a required field", "invalid_text": "Invalid", "billing_text": "Billing", "shipping_text": "Shipping", "fg_mfp_counter_text": "of" }, "page_permalink": "https:\/\/sendi2023.com.br\/", "cart_redirectition": "", "cart_page_url": "", "el_breakpoints": { "mobile": { "label": "Celular em modo retrato", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Celular em modo paisagem", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Retrato", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Paisagem do tablet", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } };
 	</script>
+	<script src="{% static 'js/evento.js' %}" id="eael-general-js"></script>
 	<script src="{% static 'js/general.min.js' %}" id="eael-general-js"></script>
-	<script src="{% static 'js/eael-10.js ' %}" id="eael-10-js"></script>
-	<script src="{% static 'js/particles.js ' %}" id="wpr-particles-js"></script>
-	<script src="{% static 'js/jarallax.min.js ' %}" id="wpr-jarallax-js"></script>
-	<script src="{% static 'js/parallax.min.js ' %}" id="wpr-parallax-hover-js"></script>
-	<script src="{% static 'js/api.js ' %}" id="google-recaptcha-js"></script>
-	<script src="{% static 'js/hello-frontend.min.js ' %}" id="hello-theme-frontend-js"></script>
+	<script src="{% static 'js/eael-10.js' %}" id="eael-10-js"></script>
+	<script src="{% static 'js/particles.js' %}" id="wpr-particles-js"></script>
+	<script src="{% static 'js/jarallax.min.js' %}" id="wpr-jarallax-js"></script>
+	<script src="{% static 'js/parallax.min.js' %}" id="wpr-parallax-hover-js"></script>
+	<script src="{% static 'js/api.js' %}" id="google-recaptcha-js"></script>
+	<script src="{% static 'js/hello-frontend.min.js' %}" id="hello-theme-frontend-js"></script>
 	<script id="happy-elementor-addons-js-extra">
 		var HappyLocalize = { "ajax_url": "https:\/\/sendi2023.com.br\/wp-admin\/admin-ajax.php", "nonce": "75f62882ce", "pdf_js_lib": "https:\/\/sendi2023.com.br\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib" };
 	</script>
@@ -3960,7 +4034,7 @@
 	<script src="{% static 'js/imagesloaded.min.js' %}" id="imagesloaded-js"></script>
 	<script src="{% static 'js/jquery-numerator.min.js' %}" id="jquery-numerator-js"></script>
 	<script id="gt_widget_script_58178032-js-before">
-		window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {}; window.gtranslateSettings['58178032'] = { "default_language": "pt", "languages": ["en", "pt", "es"], "url_structure": "none", "flag_style": "3d", "flag_size": 24, "wrapper_selector": "#gt-wrapper-58178032", "alt_flags": { "en": "usa" }, "horizontal_position": "right", "vertical_position": "bottom", "flags_location": "\/wp-content\/plugins\/gtranslate\/flags\/" };
+		window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {}; window.gtranslateSettings['58178032'] = { "default_language": "pt", "languages": ["en", "pt", "es"], "url_structure": "none", "flag_style": "3d", "flag_size": 24, "wrapper_selector": "#gt-wrapper-58178032", "alt_flags": { "en": "usa" }, "horizontal_position": "right", "vertical_position": "bottom", "flags_location": "{% static 'wp-content/plugins/gtranslate/flags/' %}" };
 	</script>
 	<script src="{% static 'js/flags.js' %}" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/"
 		data-gt-orig-domain="sendi2023.com.br" data-gt-widget-id="58178032" defer></script>
@@ -4101,12 +4175,41 @@
 			});
 		})(jQuery);
 	</script>
+	<script>
+        document.getElementById('mi-widget-button').addEventListener('click', function() {
+            // Redirecionar para a âncora com o ID "quero-participar"
+			console.log("cliquei aqui")
+            window.location.href = '#quero-participar';
+        });
+    </script>
+
+    <!-- Seu código de inicialização do widget -->
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+            w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+            js.id = o; js.src = f; js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+        }(window, document, 'script', 'widget4Events', 'https://cdn.4.events/mi-widget/bundle.js'));
+        widget4Events('init', {
+            client_id: '22776',
+            event_id: '2',
+            position: 'left',
+            button_text: 'GARANTA SUA VAGA',
+            language: 'pt-br',
+            image: 'https://vp2uploads.s3.amazonaws.com/22776/imagem_fundo_widget/89f118e75a7611fc0d92a968a80527b87f0e9329.png',
+            theme: {
+                button_color: '#2bbf64',
+                button_text_color: '#ffffff',
+            },
+        });
+    </script>
 	<script src="{% static 'js/elements-handlers.min.js' %}" id="pro-elements-handlers-js"></script>
 	<script id="wpr-addons-js-js-extra">
 		var WprConfig = { "ajaxurl": "https:\/\/sendi2023.com.br\/wp-admin\/admin-ajax.php", "resturl": "https:\/\/sendi2023.com.br\/wp-json\/wpraddons\/v1", "nonce": "36ab8acbbb", "comparePageID": "", "comparePageURL": "https:\/\/sendi2023.com.br\/", "wishlistPageID": "", "wishlistPageURL": "https:\/\/sendi2023.com.br\/", "chooseQuantityText": "Please select the required number of items.", "site_key": "", "is_admin": "", "input_empty": "Please fill out this field", "select_empty": "Nothing selected", "file_empty": "Please upload a file", "recaptcha_error": "Recaptcha Error" };
 	</script>
 	<script data-cfasync="false" src="{% static 'js/frontend.min_2.js' %}" id="wpr-addons-js-js"></script>
-	<script src="{% static 'js/modal-popups.min.js' %}" id="wpr-modal-popups-js-js' %}"></script>
+	<script src="{% static 'js/modal-popups.min.js' %}" id="wpr-modal-popups-js-js"></script>
 	<script src="{% static 'js/jquery.sticky.min.js' %}" id="e-sticky-js"></script>
 
 </body>
